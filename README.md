@@ -2,6 +2,8 @@
 
 Reusable Republic Polytechnic software-testing skills for student software-testing assignments.
 
+This repository contains fundamental and simplified versions of test cases and test plans. They are intended as easy-to-follow starting points for learning and school assignments, rather than complete industry-standard testing documentation.
+
 ## Included Skills
 
 - `rp-test-plan` - Creates structured test plans such as `EcoQuest - User Authentication Test Plan`.
