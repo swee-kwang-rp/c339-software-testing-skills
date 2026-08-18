@@ -1,7 +1,6 @@
-# c339-software-testing-skills
 # RP QA Skills
 
-Reusable Republic Polytechnic software-testing skills for student.
+Reusable Republic Polytechnic software-testing skills for student software-testing assignments.
 
 ## Included Skills
 
@@ -10,18 +9,20 @@ Reusable Republic Polytechnic software-testing skills for student.
 
 ## Install from GitHub
 
-After publishing this folder as a GitHub repository:
+Install the complete collection from GitHub:
 
 ```bash
-npx skills add <your-github-username>/rp-qa-skills
+npx skills add swee-kwang-rp/c339-software-testing-skills
 ```
 
 Install only one skill:
 
 ```bash
-npx skills add <your-github-username>/rp-qa-skills rp-login-test-case-summary
-npx skills add <your-github-username>/rp-qa-skills rp-test-plan
+npx skills add swee-kwang-rp/c339-software-testing-skills rp-login-test-case-summary
+npx skills add swee-kwang-rp/c339-software-testing-skills rp-test-plan
 ```
+
+Repository: <https://github.com/swee-kwang-rp/c339-software-testing-skills>
 
 The repository follows the Agent Skills layout:
 
