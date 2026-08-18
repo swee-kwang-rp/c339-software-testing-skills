@@ -20,6 +20,94 @@ Guide the user through a clear, school-assignment-ready test plan using the user
 
 When guiding the user, point out missing decisions such as the feature boundary, test data, environment, responsibilities, schedule, entry criteria, exit criteria, and risk mitigations. Ask for confirmation when a missing detail changes the plan; otherwise use a clearly labelled assumption.
 
+## Title Naming Rules
+
+- Order the title from broadest to narrowest, ending with the artifact type.
+- Keep the product or system name first, then the feature or component, and finish with the document type.
+- Best practice format: `[Product] – [Feature/Component] [Artifact Type]`.
+- Example: `EcoQuest – User Authentication Test Plan`.
+- Use the same logic for other artifacts when relevant, such as `EcoQuest – User Authentication Test Cases`.
+
+## ID Naming Rules
+
+- A test plan ID should be a unique code that identifies the plan and follows the same broad-to-narrow structure as the title.
+- The ID is derived from the product, feature, artifact type, and running sequence number.
+- Format: `XX-XX-XX-##`.
+- Each section is ordered from broadest to narrowest: product/system, feature/component, artifact type, running sequence.
+- Example: `ECO-UA-TP-01`.
+- Breakdown: `ECO` = EcoQuest, `UA` = User Authentication, `TP` = Test Plan, `01` = sequence number.
+- Keep the parts consistent with the title so each section can be clearly distinguished and matched to the artifact.
+
+## Versioning Rules
+
+- Version tracks changes to the document and should use semantic versioning (SemVer).
+- Use the same versioning scheme as software: `MAJOR.MINOR.PATCH`.
+- Increase the version when changes affect the document significantly, the content is revised, or a new approved draft is issued.
+- Example: `Version 3.2.14`.
+- Keep the version consistent with the document revision history and change log.
+
+## Executive Summary Rules
+
+- Executive Summary provides a brief overview of the system and its intended purpose.
+- Product Name is the name of the application, system, or product being tested. It is normally the same as the test plan title.
+- Product Description is a short explanation of what the product does, who it is for, and its main functions or features.
+- Test Objective states what the testing aims to verify, such as whether key functions work correctly, requirements are met, and important defects are identified before release.
+- The test objective should list the main goals of testing, such as verifying functionality, performance, usability, and security where relevant.
+- Keep the summary brief, clear, and aligned with the actual feature or system being tested.
+
+## Test Phases Rules
+
+- Test Phases outline the stages of testing, such as preparation, execution, and closure, and describe what activities happen in each phase.
+- For most software applications, the standard test plan can include three phases: Test Implementation, Test Execution, and Test Completion.
+- Test Implementation covers preparing test data, confirming the setup, reviewing requirements, and finalising the planned test activities.
+- Test Execution covers running the tests, recording outcomes, identifying defects, and checking whether the expected results are achieved.
+- Test Completion covers reviewing results, confirming exit conditions, logging defects or follow-up actions, and closing the test activity.
+- Use these phase names unless the reference template specifies different labels.
+
+## Environment Setup Rules
+
+- Environment Setup describes the setup and resources required before testing can begin.
+- It ensures that testers use the correct environment so that test results are consistent, reliable, and repeatable.
+- The environment can include hardware, software, platforms, application files, runtimes, databases, test accounts, and evidence-recording methods.
+- Hardware examples may include laptop or workstation specifications, such as memory or processing requirements.
+- Application examples may include frontend and backend source files or deployment builds.
+- Runtime examples may include frameworks or tools such as Node.js, Java, or other required runtime versions.
+- Database examples may include MySQL, PostgreSQL, SQLite, or other supported database types and versions.
+- Test Accounts includes valid credentials, roles, or login scenarios required for testing.
+- Evidence and Recording should explain how defects or failed test cases are captured, such as screenshots, notes, recorded logs, or issue tracking evidence.
+- Include only the setup items that are relevant to the actual project; do not force a fixed list when the project needs a different environment.
+
+## Schedule Rules
+
+- Schedule is a timeline showing when each phase or activity will occur.
+- Day refers to the planned day when the testing activity will be carried out, such as Day 1, Day 2, or a specific date.
+- Period refers to the time slot or session within that day, such as Period 1, Period 2, or another class/session label.
+- A schedule may include multiple periods in one day, such as Day 1 – Period 1 and Day 1 – Period 2.
+- Topics/Activity refers to the testing phase or specific work to be performed, such as Test Implementation, Test Execution, or Test Completion.
+- Keep the schedule aligned with the actual project timeline and test phases, using the reference format only when required.
+
+## Entry and Exit Criteria Rules
+
+- Entry Criteria defines the conditions that must be met before testing can start.
+- Exit Criteria defines the conditions that must be met before testing can end.
+- Entry Criteria ensures the system or feature is ready for testing and that the required setup, requirements, and test data are available.
+- Exit Criteria ensures testing is sufficiently completed and that the planned activities have been carried out to an acceptable level.
+- Typical entry conditions may include requirements being available, the application being accessible, test data being ready, and the tester being able to reach the target feature.
+- Typical exit conditions may include the planned high-priority tests being executed, defects being logged, critical defects being resolved or accepted, and results being reviewed.
+- Keep the criteria observable, realistic, and specific to the project.
+
+## Test Case Summary Table Rules
+
+- Test Case Summary Table provides a quick overview of all test cases planned for testing.
+- Test Case ID is a unique code used to identify each test case and should be derived from the test plan ID.
+- The format follows the plan structure, with the artifact type changed from `TP` for Test Plan to `TC` for Test Case.
+- Example: if the Test Plan ID is `ECO-UA-TP-01`, the first test case should start as `ECO-UA-TC-001`.
+- Test Case is a short description of what is being tested, written as a concise scenario or validation point.
+- Type identifies the category of testing and must use one of the approved values only: `Valid`, `Invalid`, `Functional`, `Validation`, `UI`, or `Security`.
+- Do not invent other type names. Use the most specific matching category for each test case.
+- Include only the relevant cases for the feature and keep the summary brief, readable, and aligned with the project requirements.
+- If the companion test-case skill is available, follow that format and naming pattern for consistency.
+
 ## Current Example
 
 - Title: `EcoQuest - User Authentication Test Plan`

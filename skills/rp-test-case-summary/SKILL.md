@@ -1,12 +1,12 @@
 ---
-name: rp-login-test-case-summary
+name: rp-test-case-summary
 description: "Create simple Republic Polytechnic software-testing login test case summary tables using Test Case ID, Test Cases, and Type. Use for manual login test cases in school assignments, especially when a test-plan ID such as ECO-UA-TP-01 defines the project prefix. Unit and automated test cases belong in code unless the user explicitly requests a documentation summary."
 argument-hint: "Describe the login feature or requirements to summarize"
 ---
 
-# RP Login Test Case Summary
+# RP Test Case Summary
 
-Create a simple manual login test-case summary suitable for a school report or slide.
+Create a simple manual test-case summary suitable for a school report or slide.
 
 ## Output Format
 
