@@ -32,10 +32,7 @@ Use exactly these columns:
 |---|---|---|
 | Valid | Uses correct or acceptable input | Login with valid username and password |
 | Invalid | Uses incorrect or unacceptable input | Login with incorrect password |
-| Functional | Checks whether a feature works as required | Password masking works correctly |
-| Validation | Checks required fields and input rules | Username cannot be left blank |
-| UI | Checks visual or interface behaviour | Login button is displayed and clickable |
-| Security | Checks authentication or security behaviour | Password is not shown as plain text |
+| Boundary | Checks minimum, maximum, or edge values | Password length is exactly 8 characters (minimum requirement) |
 
 Select the most specific applicable Type and do not combine multiple values unless the user's template allows it.
 
